@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bird Track App</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="styles.css" />
+
+  <style>
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(-45deg, #0f0f0f, #111111, #1a1a1a, #0f0f0f);
+      background-size: 400% 400%;
+      z-index: -1;
+      animation: backgroundShift 20s ease infinite;
+    }
+
+    @keyframes backgroundShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="hero">
+    <div class="hero-wrapper">
+      <img src="newjuicelogo.png" alt="Bird Track Logo" class="logo">
+      <h1>Bird Track</h1>
+      <p class="tagline">Track your nutrition. Crush your goals.</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="feature left animate-on-scroll">
+      <img src="IMG_3163.jpg" alt="Dashboard Screenshot">
+      <div class="feature-text">
+        <h2>Dashboard Overview</h2>
+        <p>Track your calories, macros, water, and activity all in one sleek dashboard.</p>
+      </div>
+    </section>
+
+    <section class="feature right animate-on-scroll">
+      <img src="IMG_3164.jpg" alt="Goal Customization">
+      <div class="feature-text">
+        <h2>Custom Goals</h2>
+        <p>Set personalized targets based on your body, activity level, and goals.</p>
+      </div>
+    </section>
+
+    <section class="feature left animate-on-scroll">
+      <img src="IMG_3165.jpg" alt="Progress Tracking">
+      <div class="feature-text">
+        <h2>Progress Tracking</h2>
+        <p>Log workouts, track your weight journey, and visualize your gains.</p>
+      </div>
+    </section>
+
+    <section class="feature right animate-on-scroll">
+      <img src="IMG_3166.jpg" alt="Food Logging">
+      <div class="feature-text">
+        <h2>Log Your Food</h2>
+        <p>Scan barcodes or enter meals manually. Track macros with precision.</p>
+      </div>
+    </section>
+  </main>
+
+  <section class="newsletter-section fade-in">
+    <h2>Stay in the Loop</h2>
+    <p>Subscribe to get updates, tips, and exclusive features.</p>
+    <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed! 🎉')">
+      <input type="email" placeholder="Enter your email" required />
+      <button type="submit">Subscribe</button>
+    </form>
+  </section>
+
+  <!-- 🔗 Social Footer -->
+  <footer>
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+      <a href="#"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+      <a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+      <a href="#"><i class="fab fa-tiktok" aria-hidden="true"></i></a>
+    </div>
+    <p>© 2025 Bird Track. All rights reserved.</p>
+  </footer>
+
+  
+</body>
+</html>
